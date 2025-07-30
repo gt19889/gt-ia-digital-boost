@@ -38,7 +38,7 @@ const HeroSection = () => {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Aumente seus resultados em <strong>300%</strong> com nossas estratégias comprovadas de tráfego pago, 
-            SEO e agentes de IA para WhatsApp. Atendimento humanizado pelos sócios Thomaz e Guilherme.
+            SEO e agentes de IA para WhatsApp.
           </p>
           
           {/* Features grid */}
