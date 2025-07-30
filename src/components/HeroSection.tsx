@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Target, Zap } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-secondary/30 to-primary/5 overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
@@ -13,11 +11,7 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
-            <img 
-              src="/lovable-uploads/7f8baf30-c892-41bc-8982-e7d5e40dc5a0.png" 
-              alt="GT Gestão Digital" 
-              className="h-20 md:h-24 mx-auto mb-6"
-            />
+            <img src="/lovable-uploads/7f8baf30-c892-41bc-8982-e7d5e40dc5a0.png" alt="GT Gestão Digital" className="h-20 md:h-24 mx-auto mb-6" />
           </div>
           
           {/* Badge */}
@@ -59,27 +53,19 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => window.open('https://wa.link/93qb83', '_blank')}
-            >
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
               Solicitar Diagnóstico Gratuito
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300"
-            >
+            <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300">
               Ver Nossos Cases
             </Button>
           </div>
           
           {/* Trust indicators */}
           <div className="mt-12 text-sm text-muted-foreground">
-            <p className="mb-4">Mais de 40 empresas confiam na GT Gestão Digital</p>
+            
             <div className="flex flex-wrap justify-center gap-6 opacity-60">
               <span className="bg-secondary px-3 py-1 rounded-md">Google Partner</span>
               <span className="bg-secondary px-3 py-1 rounded-md">RD Station</span>
@@ -89,8 +75,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
