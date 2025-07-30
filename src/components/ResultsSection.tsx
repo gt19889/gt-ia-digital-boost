@@ -49,7 +49,7 @@ const ResultsSection = () => {
       challenge: "Dificuldade para agendar consultas",
       solution: "Automação WhatsApp + SEO local + tráfego pago",
       results: [
-        "900 agendamentos/mês",
+        "300 agendamentos/mês",
         "Aumento de 250% na receita",
         "Atendimento 24/7 automatizado"
       ],
