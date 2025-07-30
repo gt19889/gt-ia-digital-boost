@@ -14,7 +14,7 @@ const HeroSection = () => {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/7b5c2575-3882-4743-9956-497e8d8941a7.png" 
+              src="/lovable-uploads/7f8baf30-c892-41bc-8982-e7d5e40dc5a0.png" 
               alt="GT Gestão Digital" 
               className="h-20 md:h-24 mx-auto mb-6"
             />
