@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, MessageSquare, Calendar, CheckCircle, Clock, Users, Zap } from "lucide-react";
 import { useState } from "react";
-
 const CTASection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -14,29 +13,19 @@ const CTASection = () => {
     company: '',
     message: ''
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const whatsappMessage = `Olá! Gostaria de agendar uma consultoria gratuita.%0A%0ANome: ${formData.name}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0AEmpresa: ${formData.company}%0AMensagem: ${formData.message}`;
     window.open(`https://wa.link/93qb83?text=${whatsappMessage}`, '_blank');
   };
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
-  const consultingBenefits = [
-    "Análise completa do seu negócio",
-    "Estratégia personalizada de crescimento",
-    "Identificação de oportunidades perdidas",
-    "Plano de ação com prazos definidos"
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+  const consultingBenefits = ["Análise completa do seu negócio", "Estratégia personalizada de crescimento", "Identificação de oportunidades perdidas", "Plano de ação com prazos definidos"];
+  return <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -69,12 +58,10 @@ const CTASection = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
-                  {consultingBenefits.map((benefit, index) => (
-                    <li key={index} className="flex items-center gap-3">
+                  {consultingBenefits.map((benefit, index) => <li key={index} className="flex items-center gap-3">
                       <ArrowRight className="w-4 h-4 text-primary flex-shrink-0" />
                       <span className="text-muted-foreground">{benefit}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </CardContent>
             </Card>
@@ -85,7 +72,7 @@ const CTASection = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
-                <div className="text-2xl font-bold text-primary">60min</div>
+                <div className="text-2xl font-bold text-primary">30min</div>
                 <p className="text-sm text-muted-foreground">Duração</p>
               </div>
               <div className="text-center">
@@ -113,10 +100,7 @@ const CTASection = () => {
                     <h3 className="font-bold text-lg mb-1">Prefere conversar agora?</h3>
                     <p className="text-green-100 text-sm">Fale direto com nossos especialistas via WhatsApp</p>
                   </div>
-                  <Button 
-                    className="bg-white text-green-600 hover:bg-green-50 font-bold"
-                    onClick={() => window.open('https://wa.link/93qb83', '_blank')}
-                  >
+                  <Button className="bg-white text-green-600 hover:bg-green-50 font-bold" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
                     Chamar
                   </Button>
                 </div>
@@ -143,32 +127,14 @@ const CTASection = () => {
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       Nome completo *
                     </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      placeholder="Seu nome"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="name" name="name" type="text" placeholder="Seu nome" value={formData.name} onChange={handleChange} required className="border-border focus:border-primary" />
                   </div>
                   
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                       WhatsApp *
                     </label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="(11) 99999-9999"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" value={formData.phone} onChange={handleChange} required className="border-border focus:border-primary" />
                   </div>
                 </div>
                 
@@ -177,31 +143,14 @@ const CTASection = () => {
                     <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                       E-mail *
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="seu@email.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="email" name="email" type="email" placeholder="seu@email.com" value={formData.email} onChange={handleChange} required className="border-border focus:border-primary" />
                   </div>
                   
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
                       Empresa
                     </label>
-                    <Input
-                      id="company"
-                      name="company"
-                      type="text"
-                      placeholder="Nome da empresa"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="company" name="company" type="text" placeholder="Nome da empresa" value={formData.company} onChange={handleChange} className="border-border focus:border-primary" />
                   </div>
                 </div>
                 
@@ -209,22 +158,10 @@ const CTASection = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     Conte-nos sobre seu desafio
                   </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Descreva brevemente qual é o principal desafio da sua empresa..."
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="border-border focus:border-primary"
-                  />
+                  <Textarea id="message" name="message" placeholder="Descreva brevemente qual é o principal desafio da sua empresa..." value={formData.message} onChange={handleChange} rows={4} className="border-border focus:border-primary" />
                 </div>
                 
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary-hover text-primary-foreground py-3 text-lg font-bold"
-                  size="lg"
-                >
+                <Button type="submit" className="w-full bg-primary hover:bg-primary-hover text-primary-foreground py-3 text-lg font-bold" size="lg">
                   Agendar Consultoria Gratuita
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -239,15 +176,8 @@ const CTASection = () => {
         </div>
 
         {/* Bottom guarantee */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-full">
-            <CheckCircle className="w-5 h-5" />
-            <span className="font-medium">Garantia de satisfação ou seu dinheiro de volta</span>
-          </div>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
