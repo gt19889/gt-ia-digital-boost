@@ -79,7 +79,7 @@ const HeroSection = () => {
           
           {/* Trust indicators */}
           <div className="mt-12 text-sm text-muted-foreground">
-            <p className="mb-4">Mais de 200 empresas confiam na GT Gestão Digital</p>
+            <p className="mb-4">Mais de 40 empresas confiam na GT Gestão Digital</p>
             <div className="flex flex-wrap justify-center gap-6 opacity-60">
               <span className="bg-secondary px-3 py-1 rounded-md">Google Partner</span>
               <span className="bg-secondary px-3 py-1 rounded-md">RD Station</span>
