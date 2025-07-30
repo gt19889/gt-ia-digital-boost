@@ -27,7 +27,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">GT Gestão Digital</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/lovable-uploads/7b5c2575-3882-4743-9956-497e8d8941a7.png" 
+                alt="GT Gestão Digital" 
+                className="h-8"
+              />
+              <h3 className="text-2xl font-bold">GT Gestão Digital</h3>
+            </div>
             <p className="text-white/80 mb-6 max-w-md">
               Agência especializada em marketing digital, automação com IA e crescimento acelerado 
               para pequenas e médias empresas brasileiras.
@@ -59,7 +66,7 @@ const Footer = () => {
               
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-white/60" />
-                <span className="text-white/80">São Paulo, Brasil</span>
+                <span className="text-white/80">Belo Horizonte, MG - Brasil</span>
               </div>
               
               <div className="flex items-center gap-3">
