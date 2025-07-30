@@ -1,55 +1,45 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Quote } from "lucide-react";
-
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      name: "Maria Silva",
-      company: "Loja de Moda Feminina",
-      text: "A GT é responsável pelo tráfego pago da minha empresa e estou super satisfeita com o serviço. Os resultados apareceram rapidamente e o atendimento é excelente!",
-      rating: 5,
-      avatar: "M"
-    },
-    {
-      name: "Carlos Roberto",
-      company: "Clínica Odontológica",
-      text: "Toppp! Muito bem atendido e resolveu meu problema. O chatbot de IA para WhatsApp revolucionou nosso atendimento.",
-      rating: 5,
-      avatar: "C"
-    },
-    {
-      name: "Ana Paula",
-      company: "E-commerce de Eletrônicos",
-      text: "Empresa séria e de confiança! Triplicamos nossas vendas em apenas 3 meses com as estratégias da GT.",
-      rating: 5,
-      avatar: "A"
-    },
-    {
-      name: "Pedro Santos",
-      company: "Curso Online",
-      text: "Ótima!!!! O trabalho de SEO e tráfego pago aumentou muito nossos leads qualificados. Recomendo!",
-      rating: 5,
-      avatar: "P"
-    },
-    {
-      name: "Juliana Costa",
-      company: "Clínica de Estética",
-      text: "Incríveis! A automação que implementaram nos economiza 20 horas por semana e aumentou nossa conversão em 250%.",
-      rating: 5,
-      avatar: "J"
-    },
-    {
-      name: "Roberto Lima",
-      company: "Loja de Suplementos",
-      text: "Profissionais excepcionais! ROI positivo em menos de 30 dias. O Thomaz e Guilherme são muito atenciosos.",
-      rating: 5,
-      avatar: "R"
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+  const testimonials = [{
+    name: "Maria Silva",
+    company: "Loja de Moda Feminina",
+    text: "A GT é responsável pelo tráfego pago da minha empresa e estou super satisfeita com o serviço. Os resultados apareceram rapidamente e o atendimento é excelente!",
+    rating: 5,
+    avatar: "M"
+  }, {
+    name: "Carlos Roberto",
+    company: "Clínica Odontológica",
+    text: "Toppp! Muito bem atendido e resolveu meu problema. O chatbot de IA para WhatsApp revolucionou nosso atendimento.",
+    rating: 5,
+    avatar: "C"
+  }, {
+    name: "Ana Paula",
+    company: "E-commerce de Eletrônicos",
+    text: "Empresa séria e de confiança! Triplicamos nossas vendas em apenas 3 meses com as estratégias da GT.",
+    rating: 5,
+    avatar: "A"
+  }, {
+    name: "Pedro Santos",
+    company: "Curso Online",
+    text: "Ótima!!!! O trabalho de SEO e tráfego pago aumentou muito nossos leads qualificados. Recomendo!",
+    rating: 5,
+    avatar: "P"
+  }, {
+    name: "Juliana Costa",
+    company: "Clínica de Estética",
+    text: "Incríveis! A automação que implementaram nos economiza 20 horas por semana e aumentou nossa conversão em 250%.",
+    rating: 5,
+    avatar: "J"
+  }, {
+    name: "Roberto Lima",
+    company: "Loja de Suplementos",
+    text: "Profissionais excepcionais! ROI positivo em menos de 30 dias. O Thomaz e Guilherme são muito atenciosos.",
+    rating: 5,
+    avatar: "R"
+  }];
+  return <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -62,10 +52,7 @@ const TestimonialsSection = () => {
               {" "}Clientes Dizem
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Mais de 50 avaliações 5 estrelas no Google. Confira os depoimentos reais de empresários 
-            que transformaram seus negócios com a GT Gestão Digital.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Avaliação 5 estrelas no Google. Confira os depoimentos reais de empresários que transformaram seus negócios com a GT Gestão Digital.</p>
         </div>
 
         {/* Stats */}
@@ -73,9 +60,7 @@ const TestimonialsSection = () => {
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">5.0</div>
             <div className="flex justify-center mb-2">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              ))}
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />)}
             </div>
             <p className="text-muted-foreground">Avaliação Google</p>
           </div>
@@ -91,8 +76,7 @@ const TestimonialsSection = () => {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="relative group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20">
+          {testimonials.map((testimonial, index) => <Card key={index} className="relative group hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-primary/20">
               {/* Quote icon */}
               <div className="absolute top-4 right-4 opacity-10">
                 <Quote className="w-8 h-8 text-primary" />
@@ -101,9 +85,7 @@ const TestimonialsSection = () => {
               <CardContent className="p-6">
                 {/* Rating */}
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                 </div>
                 
                 {/* Testimonial text */}
@@ -122,8 +104,7 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Social Proof */}
@@ -137,23 +118,15 @@ const TestimonialsSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors"
-              onClick={() => window.open('https://wa.link/93qb83', '_blank')}
-            >
+            <button className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
               Quero Meus Resultados Também
             </button>
-            <button 
-              className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all"
-              onClick={() => window.open('https://www.google.com/search?q=gt+gestao+digital+avaliacoes', '_blank')}
-            >
+            <button className="border border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-medium transition-all" onClick={() => window.open('https://www.google.com/search?q=gt+gestao+digital+avaliacoes', '_blank')}>
               Ver Todas as Avaliações
             </button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialsSection;
