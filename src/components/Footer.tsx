@@ -141,17 +141,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/80 text-sm">
-            © {currentYear} GT Gestão Digital. Todos os direitos reservados.
+            <div>© {currentYear} GT Gestão Digital. Todos os direitos reservados.</div>
+            <div className="mt-1 select-none pointer-events-none">CNPJ: 50.371.469/0001-05</div>
           </div>
           
           <div className="flex flex-wrap gap-6 text-sm">
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="/politica-de-privacidade" className="text-white/80 hover:text-white transition-colors">
               Política de Privacidade
             </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="/termos-de-uso" className="text-white/80 hover:text-white transition-colors">
               Termos de Uso
             </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="/lgpd" className="text-white/80 hover:text-white transition-colors">
               LGPD
             </a>
           </div>
