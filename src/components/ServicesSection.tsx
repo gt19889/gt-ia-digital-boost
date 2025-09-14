@@ -106,7 +106,7 @@ const ServicesSection = () => {
           </p>
           <button 
             className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
-            onClick={() => window.open('https://wa.link/93qb83', '_blank')}
+            onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0', '_blank')}
           >
             Conversar com Especialista
             <ArrowRight className="w-5 h-5" />

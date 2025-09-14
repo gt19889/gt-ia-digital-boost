@@ -55,7 +55,7 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-white/60" />
                 <a 
-                  href="https://wa.link/93qb83" 
+                  href="https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"

@@ -53,7 +53,7 @@ const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0', '_blank')}>
               Solicitar Diagnóstico Gratuito
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>

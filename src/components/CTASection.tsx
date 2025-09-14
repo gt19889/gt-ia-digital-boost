@@ -16,7 +16,7 @@ const CTASection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const whatsappMessage = `Olá! Gostaria de agendar uma consultoria gratuita.%0A%0ANome: ${formData.name}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0AEmpresa: ${formData.company}%0AMensagem: ${formData.message}`;
-    window.open(`https://wa.link/93qb83?text=${whatsappMessage}`, '_blank');
+    window.open('https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0', '_blank');
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -100,7 +100,7 @@ const CTASection = () => {
                     <h3 className="font-bold text-lg mb-1">Prefere conversar agora?</h3>
                     <p className="text-green-100 text-sm">Fale direto com nossos especialistas via WhatsApp</p>
                   </div>
-                  <Button className="bg-white text-green-600 hover:bg-green-50 font-bold" onClick={() => window.open('https://wa.link/93qb83', '_blank')}>
+                  <Button className="bg-white text-green-600 hover:bg-green-50 font-bold" onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0', '_blank')}>
                     Chamar
                   </Button>
                 </div>

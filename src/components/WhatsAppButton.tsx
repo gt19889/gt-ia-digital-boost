@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.open('https://wa.link/93qb83', '_blank');
+    window.open('https://api.whatsapp.com/send/?phone=5531984005700&text=Ol%C3%A1%21+Gostaria+de+saber+mais+sobre+a+oferta+de+tr%C3%A1fego+pago+%2B+redes+sociais.&type=phone_number&app_absent=0', '_blank');
   };
 
   if (!isVisible) return null;
