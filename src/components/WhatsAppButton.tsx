@@ -48,7 +48,7 @@ const WhatsAppButton = () => {
       >
         <MessageCircle className="w-6 h-6" />
         <span className="font-medium whitespace-nowrap">
-          Falar com Especialista
+          Solicitar Orçamento
         </span>
       </button>
 
